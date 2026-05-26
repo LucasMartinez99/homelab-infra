@@ -130,7 +130,7 @@ One of the reasons I went the self-hosting route is cost predictability:
 
 | Item | Monthly cost |
 |---|---|
-| VPS (4 vCPU / 8 GB RAM / 200 GB SSD) | ~$15 |
+| VPS (2 vCPU / 8 GB RAM / 200 GB SSD) | ~$15 |
 | Domain registrations | ~$2 (amortized) |
 | Cloudflare | $0 (free tier) |
 | AWS S3 for backups (~5 GB) | <$1 |
@@ -157,7 +157,7 @@ A few things I didn't expect:
 - **Backups aren't real until you've restored from them.** Periodically I
   spin up a scratch container and restore from the latest S3 backup to
   verify the dump is usable.
-- **Self-hosting email is masochism, and I love it.** SPF, DKIM, DMARC,
+- **Self-hosting email is really tough, and I love it.** SPF, DKIM, DMARC,
   reverse DNS, IP reputation — there's no abstraction that saves you from
   learning email properly. It's a rite of passage.
 - **The reverse proxy is the single most important container.** If Nginx
@@ -197,7 +197,7 @@ I update here. Latest changes are in the commit history.
 ## 📫 About me
 
 I'm Lucas, a backend engineer based in Paraguay 🇵🇾, focused on Java +
-Spring Boot, and slowly building toward DevOps and SRE roles via the
+Spring Boot, AWS Solutions Architect Associate Certified and slowly building toward DevOps and SRE roles via the
 RHCSA / CKA / Terraform Associate path.
 
 - **GitHub**: [LucasMartinez99](https://github.com/LucasMartinez99)
