@@ -6,8 +6,7 @@
 
 This repository documents the production infrastructure I run on a single
 self-managed Linux VPS: how it's architected, what it costs, what's broken
-along the way, and how I keep it running. It's the operational side of being
-a backend engineer who owns systems end-to-end.
+along the way, and how I keep it running.
 
 All configuration examples in this repo are **sanitized** — real domains, IPs,
 secrets, and hostnames have been replaced with placeholders. The architecture
@@ -17,16 +16,19 @@ and tooling, however, are exactly what's running in production right now.
 
 ## 🎯 Why this exists
 
-I'm a Java / Spring Boot backend engineer. I believe writing code is half the
-job — the other half is making sure it runs reliably in front of real users.
+I'm a DevOps engineer. I believe that pipelines and containers are only half
+the job — the other half is making sure systems run reliably in front of real
+users, at 3 AM, without you touching them.
+
 Over the past two years I've moved my personal projects from managed hosting
-(cPanel) onto a self-managed VPS, and built up the operational layer myself.
+(cPanel) onto a self-managed VPS, and built up the full operational layer myself:
+reverse proxy, observability, automated backups, CI/CD, and alerting.
 
 This repo is the public-facing write-up of that work. It's intended for:
 
 - 👩‍💻 **Recruiters and hiring managers** — to see how I think about
-  infrastructure, beyond what's visible in application repos
-- 🛠 **Other developers** — who are considering self-hosting and want a
+  infrastructure in practice, not just on paper
+- 🛠 **Other engineers** — who are considering self-hosting and want a
   real-world reference
 - 📝 **Future me** — documentation is the best gift you give your future self
 
@@ -196,11 +198,15 @@ I update here. Latest changes are in the commit history.
 
 ## 📫 About me
 
-I'm Lucas, a backend engineer based in Paraguay 🇵🇾, focused on Java +
-Spring Boot, AWS Solutions Architect Associate Certified and slowly building toward DevOps and SRE roles via the
-RHCSA / CKA / Terraform Associate path.
+I'm Lucas, a DevOps engineer based in Paraguay 🇵🇾. I hold the AWS Solutions
+Architect Associate certification and I'm currently working through the
+RHCSA → Terraform Associate → CKA path to go deeper on Linux, IaC, and
+Kubernetes.
+
+My background is in backend development, which means I understand the
+applications I deploy — not just the infrastructure around them.
 
 - **GitHub**: [LucasMartinez99](https://github.com/LucasMartinez99)
 - **LinkedIn**: [lucas-software-engineer](https://www.linkedin.com/in/lucas-software-engineer/)
 
-Open to remote backend engineering opportunities.
+Open to remote DevOps & infrastructure engineering opportunities.
